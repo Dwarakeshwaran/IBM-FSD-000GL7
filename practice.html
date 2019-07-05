@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Practice</title>
+    <style>
+        input{
+            border: 2px dotted;
+        }
+
+        fieldset legend{
+            color: red;
+        }
+        fieldset{
+            width: 30%;
+            float: left;
+            
+        }
+    
+    </style>
+</head>
+<body>
+    <!--
+        Styling Tags : <b><i><del><u><sub><sup>
+        Lists : <ul><ol><li>
+        Table : <tr>->Table row <th>->Table Heading(always bold by default) <td>->Table Data <thead><tbody><tfoot>
+        Forms : <input>(for creating a text box) ->attributes : type="text" ; name="fname" ; placeholder="Your Name"
+                max,min,maxlength
+                <label> ->for="dob" (defines the field)
+                <fieldset><legend><bdo>
+                <code> -> &nbsp; &lt; &gt 
+        Style : <style type="text/css"> (style should be inside head tag)
+    -->
+    <fieldset>
+        <legend><b>Movie Details</b></legend>
+        <form name="Movies" method="GET" validate>
+                <table>
+                        <tr>
+                            <th>Movie</th>
+                            <td><input type="text" name="Movie" placeholder="Type Movie name here"></input></td>
+                        </tr>
+                        <tr>
+                            <th>Genre</th>
+                            <td><input type="text" name="Genre" placeholder="Type Genre here"></input></td>
+                        </tr>
+                        <tr>
+                            <th>Director</th>
+                            <td><input type="text" name="Director" placeholder="Type Director Name here"></input></td>
+                        </tr>
+                        <tr>
+                            <th>Year</th>
+                           <td><input type="number" name="Year" placeholder="Type Released Year here"></input></td>
+                        </tr>
+                        <tr>
+                            <td><input type="submit" value="Save"></input></td>
+                        </tr>
+                </table>
+        </form>
+    </fieldset>
+
+    <fieldset>
+        <legend><b>Practice Area</b></legend>
+        <p>
+            <b>Movies</b> are  a great way of <i>Entertainment</i>
+            <hr />
+
+        </p>
+    </fieldset>
+
+    
+</body>
+</html>
