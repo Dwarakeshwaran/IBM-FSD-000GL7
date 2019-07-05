@@ -1,23 +1,32 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <title>Practice</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
     <style>
-        input{
+        input {
             border: 2px dotted;
         }
 
-        fieldset legend{
+        fieldset legend {
             color: red;
         }
-        fieldset{
-            width: 30%;
+
+        div section {
             float: left;
-            
         }
-    
+
+        div ol li {
+            color: blue;
+        }
+
+        div ul li {
+            color: firebrick;
+        }
     </style>
 </head>
+
 <body>
     <!--
         Styling Tags : <b><i><del><u><sub><sup>
@@ -30,42 +39,79 @@
                 <code> -> &nbsp; &lt; &gt 
         Style : <style type="text/css"> (style should be inside head tag)
     -->
-    <fieldset>
+    <fieldset class="fieldset">
         <legend><b>Movie Details</b></legend>
         <form name="Movies" method="GET" validate>
-                <table>
-                        <tr>
-                            <th>Movie</th>
-                            <td><input type="text" name="Movie" placeholder="Type Movie name here"></input></td>
-                        </tr>
-                        <tr>
-                            <th>Genre</th>
-                            <td><input type="text" name="Genre" placeholder="Type Genre here"></input></td>
-                        </tr>
-                        <tr>
-                            <th>Director</th>
-                            <td><input type="text" name="Director" placeholder="Type Director Name here"></input></td>
-                        </tr>
-                        <tr>
-                            <th>Year</th>
-                           <td><input type="number" name="Year" placeholder="Type Released Year here"></input></td>
-                        </tr>
-                        <tr>
-                            <td><input type="submit" value="Save"></input></td>
-                        </tr>
-                </table>
+            <table border=2px>
+                <tr>
+                    <th>Movie</th>
+                    <td><input type="text" name="Movie" placeholder="Type Movie name here"></input></td>
+                </tr>
+                <tr>
+                    <th>Genre</th>
+                    <td><input type="text" name="Genre" placeholder="Type Genre here"></input></td>
+                </tr>
+                <tr>
+                    <th>Director</th>
+                    <td><input type="text" name="Director" placeholder="Type Director Name here"></input></td>
+                </tr>
+                <tr>
+                    <th>Year</th>
+                    <td><input type="number" name="Year" placeholder="Type Released Year here"></input></td>
+                </tr>
+                <tr>
+                    <td colspan="2" align="center"><input type="submit" value="Save"></input></td>
+                </tr>
+            </table>
         </form>
     </fieldset>
 
-    <fieldset>
+    <fieldset class="fieldset">
         <legend><b>Practice Area</b></legend>
         <p>
-            <b>Movies</b> are  a great way of <i>Entertainment</i>
+            <b>Movies</b> are a great way of <i>Entertainment</i>
             <hr />
 
         </p>
+
+        <div>
+            <section>
+                <p><b><i>Genre List</i></b></p>
+                <ul>
+                    <li>Crime</li>
+                    <li>Drama</li>
+                    <li>Romance</li>
+                    <li>Thriller</li>
+                    <li>Horror</li>
+                </ul>
+            </section>
+
+            <section>
+                <p><b><i>Top Directors</i></b></p>
+                <ol>
+                    <li>Martin Scorecesse</li>
+                    <li>Selvaragavan</li>
+                    <li>Anurag Kashyup</li>
+                    <li>Quentin Tarantino</li>
+                    <li>Coen Brothers</li>
+                </ol>
+            </section>
+        </div>
     </fieldset>
 
-    
+    <fieldset class="fieldset">
+        <legend>Ratings</legend>
+        <form>
+            <input type="number" name="Martin Scorecesse" placeholder="Martrin Scorecesse" min="0" max="100" class="input-form">
+            <input type="number" name="Selvaragavan" placeholder="Selvaragavan" class="input-form">
+            <input type="number" name="Anurag Kashyup" placeholder="Anurag Kashyup" class="input-form">
+            <input type="number" name="Quentin Tarantino" placeholder="Quentin Tarantino" class="input-form">
+            <input type="number" name="Coen Brothers" placeholder="Coen Brothers" class="input-form">
+            <input type="submit" value="Save" formmethod="GET" class="input-submit">
+        </form>
+    </fieldset>
+
+
 </body>
+
 </html>

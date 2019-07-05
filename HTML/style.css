@@ -1,0 +1,29 @@
+.input-form{
+    border: 10em;
+    display: block;
+    margin: 10px;
+    padding-left:10px;
+    margin-left: 15%;
+}
+.input-submit{
+    cursor:pointer;
+    margin-left: 25%;
+}
+
+.ratings{
+    float: bottom;
+}
+body{
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#b3dced+0,29b8e5+50,bce0ee+100;Blue+Pipe */
+    background: #b3dced; /* Old browsers */
+    background: -moz-linear-gradient(top,  #b3dced 0%, #29b8e5 50%, #bce0ee 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  #b3dced 0%,#29b8e5 50%,#bce0ee 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  #b3dced 0%,#29b8e5 50%,#bce0ee 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b3dced', endColorstr='#bce0ee',GradientType=0 ); /* IE6-9 */
+}
+.fieldset{
+    width: 20%;
+    margin: 30px;
+    padding-left: 50px;
+    margin-left: 35%;
+}
