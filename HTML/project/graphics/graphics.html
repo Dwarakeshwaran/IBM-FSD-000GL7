@@ -1,0 +1,35 @@
+<html>
+    <head>
+        <title>Graphics</title>
+        <link rel="Stylesheet" type="text/css" href="style.css" />
+    </head>
+
+    <!--
+        <circle><rect><animate attributeType,attributeName,dur,from,to,repeatcount><defs>->to define a gradient, lets say, linear gradient<linearGradient>(set an id and gradientTransform for rotating ie., rotate(90)->the number inside is a degree or angle of rotation)
+        (inside linearGradient <stop> tag is used to define the colors. attributes for stop are offset, stop-color)    
+    -->
+    <body>
+        <svg>
+            <circle cx="70" cy="70" r="50" fill="red" stroke="black">
+                <animate attributeType="XML" attributeName="cx" dur="2s" from="-20" to="50" repeatCount="definite"></animate>
+            </circle>
+            
+        </svg>
+
+        <svg>
+            <rect x="70" y="70" width="100" height="200" fill=url("#gradient")></rect>
+
+            <linearGradient id="gradient" gradientTransform=rotate(80)>
+                <stop offset="10%" stop-color="red"></stop>
+                <stop offset="5%" stop-color="blue"></stop>
+                <stop offset="20%" stop-color="green"></stop>
+                <stop offset="25%" stop-color="yellow"></stop>
+            </linearGradient>
+        </svg>
+
+
+        
+
+    </body>
+    
+</html> 
