@@ -1,46 +1,62 @@
 const add = ()=>{
-    let n = document.getElementById('name').value;
-    let e = document.getElementById('email').value;
-    let o = document.getElementById('org').value;
+    let name = document.getElementById('name').value;
+    let email = document.getElementById('email').value;
+    let org = document.getElementById('org').value;
 
-
-    let arr = [];
    
+    let info = [];
+    info = {
+        'name': name,
+        'email': email,
+        'org': org
+    };
+
+    table = `<table>
+    <tr>
+    <th>Name</th>
+    <th>Email</th>
+    <th>Organisation</th>
+    </tr>`;
+
+let row = '';
+    localStorage.setItem(info,JSON.stringify(info));
     
-    arr.push({
-        name: n,
-        email: e,
-        org: o
-    });
 
-    let row = '';
+    Object.keys(localStorage).forEach((key)=>{
 
-    localStorage.setItem("arr",JSON.stringify(arr));
-
-    Object.keys(localStorage).forEach((keys)=>{
-
-        info = JSON.parse(localStorage.getItem(keys));
-
-        console.log(Object.values(info)[0]);
-
-        row += `<tr>
-                <td>${info}<td>
-
-                </tr> `
+        info = JSON.parse(localStorage.getItem(key));
+        
+       
+        //console.log(info.email);
+        //console.log(info.name);
+        table +=`<tr>
+            <td>${info.name}</td>
+            <td>${info.email}</td>
+            <td>${info.org}</td>
+        </tr>`;
         
 
     });
 
-    console.log(info);
-
-    table = `<table>
-        <tr>
-        <th>Name</th>
-        <th>Email</th>
-        <th>Organisation</th>
-        ${row}
-        </thead>`
+   
+        table += `</thead>`;
 
     document.getElementById('display').innerHTML = table;
 
-}
+    }
+
+    
+    const remove = ()=>{
+        let r_email = document.getElementById('remove_email').value;
+ 
+         if(localStorage.getItem(remove_email)!= undefined){
+             Object.keys(localStorage).forEach((key)=>{
+ 
+                 if(key == r_email){
+                    alert('already exits');
+                 }
+ 
+             });
+             
+             }
+         }
