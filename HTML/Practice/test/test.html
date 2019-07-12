@@ -4,7 +4,50 @@
     <title>TimeTable</title>
     <meta charset="UTF-8">
     <script type="text/javascript" src="test.js"></script>
-    <style type="text/css" src="test.css"></style>
+    <style>
+        fieldset {
+            background-color:rgb(216, 242, 246); 
+            margin-left: 30%;
+            margin-right: 30%;
+            padding-left: 10%;
+            padding-right: 5%;
+            font-family:Georgia, 'Times New Roman', Times, serif;
+            font-size: 30px;  
+        }
+
+        .btn{
+            display: block;
+            margin-left: 10px;
+            margin-top: 10px;
+            width: 300px;
+            height: 50px;
+            cursor: pointer;
+            background-color: hsl(189, 26%, 49%);
+            
+        }
+
+        body{
+            background-color:azure;
+        }
+
+        table th{
+            font-size: 20px;
+            
+        }
+
+        input{
+            width: 250px;
+            height: 30px;
+            font-size: 25px;
+        }
+
+        .drop{
+            width: 250px;
+            height: 30px;
+            font-size: 25px;
+        }
+
+    </style>
 </head>
 
 <body onload = clr()>
@@ -14,7 +57,7 @@
 
         <fieldset id='submit'>
 
-            <legend align="center">Submit Trainer Details</legend>
+            <legend align="center"><b>WELCOME</b></legend>
 
             <table>
                 <tr>
@@ -24,7 +67,7 @@
                 <tr>
                     <th>Class</th>
                     <td>
-                        <select id="t_room" >
+                        <select id="t_room" class="drop">
                             <option value="0">-select-</option>
                             <option value="A">A</option>
                             <option value="B">B</option>
@@ -37,7 +80,7 @@
                 <tr>
                     <th>Skills</th>
                     <td>
-                        <select id="t_skills" >
+                        <select id="t_skills" class="drop">
                             <option value="0">-select-</option>
                             <option value="MAT">Maths</option>
                             <option value="CS">Computer Science</option>
@@ -51,7 +94,7 @@
                 <tr>
                     <th>Time</th>
                     <td>
-                        <select id="t_time" >
+                        <select id="t_time" class="drop">
                             <option value="0">-select-</option>
                             <option value="FIRST">9 AM to 10 AM</option>
                             <option value="SECOND">10 AM to 11 AM</option>
@@ -64,20 +107,20 @@
                 </tr>
 
                 <tr>
-                    <td colspan="2" align="center"><input type="button" id="save" value="Submit" onclick="saveDetails()" />
+                    <td colspan="2" align="center"><input type="button" class="btn" id="save" value="Submit" onclick="saveDetails()" />
                     </td>
                 </tr>
                 <tr>
-                    <td colspan="2" align="center"><input type="button" id="check" value="Check" onclick="checkDetails()" />
+                    <td colspan="2" align="center"><input type="button" class="btn" id="check" value="Check" onclick="checkDetails()" />
                     </td>
                 </tr>
                 <tr>
-                    <td colspan="2" align="center"><input type="button" id="display" value="Display" onclick="displayDetails()" />
+                    <td colspan="2" align="center"><input type="button" class="btn" id="display" value="Display" onclick="displayDetails()" />
                     </td>
                 </tr>
 
                 <tr>
-                    <td colspan="2" align="center"><input type="button" id="delete" value="Delete" onclick="deleteDetails()" />
+                    <td colspan="2" align="center"><input type="button" class="btn" id="delete" value="Delete" onclick="deleteDetails()" />
                     </td>
                 </tr>
             </table>
@@ -95,7 +138,7 @@
 
     
         <fieldset >
-            <legend align="center">TIMETABLE</legend>
+            <legend align="center"><b>TIMETABLE</b></legend>
 
             <div id='show'>
                 

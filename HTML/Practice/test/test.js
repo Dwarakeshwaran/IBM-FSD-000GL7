@@ -137,7 +137,7 @@ class Timetable{
         let table = '';
 
         table = `
-        <table>
+        <table border='1px'>
         <tr>
         <th>SUBJECTS</th>
         ${this.generateRow0(obj)}
