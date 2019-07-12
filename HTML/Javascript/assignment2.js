@@ -19,8 +19,9 @@ const add = ()=>{
     </tr>`;
 
 let row = '';
-    localStorage.setItem(info,JSON.stringify(info));
+    localStorage.setItem(email,JSON.stringify(info));
     
+    //console.log(info);
 
     Object.keys(localStorage).forEach((key)=>{
 
