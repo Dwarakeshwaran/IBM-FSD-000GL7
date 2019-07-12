@@ -88,6 +88,17 @@ const displayDetails = () =>{
 
 }
 
+const deleteDetails = () =>{
+
+    const trainer = new Timetable();
+    
+    let name = document.getElementById('t_name').value;
+
+    //console.log(name);
+
+    trainer.delete(name);
+}
+
 
 
 class Timetable{
@@ -115,6 +126,10 @@ class Timetable{
     
         return trainer;
     
+    }
+
+    delete(obj){
+        localStorage.removeItem(obj);   
     }
 
     DisplayDetails(obj){
@@ -190,4 +205,12 @@ class Timetable{
     }
     
     
+}
+
+
+const clr = () =>{
+    document.getElementById('t_name').value = '';
+    document.getElementById('t_room').selectedIndex = "0";
+    document.getElementById('t_skills').selectedIndex = "0";
+    document.getElementById('t_time').selectedIndex = "0";
 }
