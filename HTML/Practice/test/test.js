@@ -1,3 +1,4 @@
+
 const saveDetails = () =>{
 
     //console.log("save called");
@@ -12,7 +13,7 @@ const saveDetails = () =>{
 
     trainer.store(trainer);
 
-    const getValues = trainer.retrieve();
+    //const getValues = trainer.retrieve();
 
     //console.log(getValues);
 
@@ -100,7 +101,7 @@ const deleteDetails = () =>{
 }
 
 
-
+//CLASS STARTS HERE
 class Timetable{
     input(t_name,t_room,t_skills,t_time){
         this.t_name = t_name

@@ -1,0 +1,57 @@
+<html>
+
+<head>
+    <title>App</title>
+    <meta charset="UTF-8">
+</head>
+<style>
+    div{
+        display: inline-block
+    }
+</style>
+<script type="text/javascript">
+
+    const url = ('http://localhost:1000/status');
+    fetch(url).then(res => res.json())
+        .then(res => {
+            console.log(res);
+            dropdown(res);
+        });
+    const dropdown = ((user) => {
+
+        //document.write(JSON.stringify(user.users[0].id));
+        let uData = '';
+        let pData = '';
+        uData = `<select>`
+        user.users.forEach((u) => {
+            uData += `
+                            <option>${u.name}</option>
+                            `
+        });
+        uData += `</select>`
+
+        pData = `<select>`
+
+        user.projects.forEach((p) => {
+            pData += `<option>${p.pname}</option>`
+        })
+
+        pData += `</select>`
+        document.getElementById('users').innerHTML = uData;
+        document.getElementById('projects').innerHTML = pData;
+
+    });
+
+
+</script>
+
+<body>
+    <div id='users'>
+
+    </div>
+    <div id='projects'>
+
+    </div>
+</body>
+
+</html>
