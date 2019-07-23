@@ -18,7 +18,7 @@ const search_item= ()=>{
                 </tr>
                 `
         data.items.forEach((item) => {
-            if(iname == item.name){
+           // if(iname == item.name){
                 table += `
                         <tr>
                         <td>${item.id}</td>
@@ -26,7 +26,7 @@ const search_item= ()=>{
                         <td>${item.price}</td>
                         <td><input type='button' value='Add to Cart' onclick = 'addCart(${JSON.stringify(item.name)},${item.price})'></td>
                         </tr>`
-            }
+           // }
             
         });
 
@@ -45,7 +45,7 @@ const addCart = (cname, cprice) => {
     const url = 'http://localhost:1000/cart';
 
     console.log(obj);
-    fetch(url, {
+    fetch(url + '/add', {
 
         headers: {
             'content-type': 'application/json'

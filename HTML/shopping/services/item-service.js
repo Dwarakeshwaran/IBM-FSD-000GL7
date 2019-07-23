@@ -1,6 +1,6 @@
 const data = require('../db/items-data').items;
 
-class Service{
+const dataClass = class Service{
 
     constructor(){
         this.items = data;
@@ -10,6 +10,11 @@ class Service{
         return this.items;
     }
 
+    setData(data){
+        this.items.push(data);
+        return this.items;  
+    }
+
 }
 
-module.exports.Service = Service;
+module.exports.dataClass = dataClass;

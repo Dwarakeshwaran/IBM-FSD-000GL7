@@ -1,11 +1,11 @@
 const express = require('express');
 const server = express();
-const Service = require('./services/item-service').Service;
+const Service = require('./services/item-service').dataClass;
 const parser = require('body-parser');
 const cors = require('cors');
 
 
-const api = require('./api').api;
+const api = require('./api/api').api;
 //const urlParser = parser.json({ extended: true });
 
 
