@@ -1,38 +1,20 @@
-const add = () =>{
-    const emp = new EmployeeDetails();
+const express = require('express');
+const server = express();
+const parser = require('body-parser');
 
-    emp.setup(
-        document.getElementById('eid').value,
-        document.getElementById('ename').value,
-        document.getElementById('esalary').value
-    )
+server.use(parser.json());
+server.get('/status',(req,res)=>{
+    res.end("Welcome to Express Nodemon version 2");
+})
 
-    emp._add();
-}
+server.listen(1000,()=>{
+    console.log("Port is started at 1000");
+})
 
-
-
-
-
-
-
-class EmployeeDetails{
-    setup(id,name,salary){
-
-        this.id = id
-        this.name = name
-        this.salary = salary
-
-    }
-
-    _add(){
-
-        localStorage.setItem(this.id,JSON.stringify({
-            eID : this.id,
-            eName : this.name,
-            eSalary : this.salary
-        }))
-
-        
-    }
-}
+server.post('/post',(req,res)=>{
+    res.setHeader('Content-Type','Application/json');
+    res.end(JSON.stringify({
+        "id" : req.body.id,
+        "name":req.body.name
+    }))
+})
