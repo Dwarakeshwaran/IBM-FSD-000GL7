@@ -83,14 +83,16 @@
                     const box9 = document.getElementById('txt9').value;
                     //console.log(box1);
 
-                    if( ((box1 == box2) && (box2 == box3)) || ((box1 == box4) && (box4 == box7)) || ((box1 == box5) && (box5 == box9)))
+                    if( ((box1 == box2) && (box2 == box3)) || ((box1 == box4) && (box4 == box7)) || ((box1 == box5) && (box5 == box9)) || ((box3 == box5) && (box5 == box7)) ((box3 == box6) && (box6 == box9)))
                     {
-                        console.log('Success');
+                        alert('Success');
                     }
-                    else
+                    else 
                     {
-                        console.log('Fail');
+                        alert('Fail');
                     }
+
+                    fetch()
                 })
             }
         
