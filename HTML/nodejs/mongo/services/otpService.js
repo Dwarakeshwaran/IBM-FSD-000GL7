@@ -2,6 +2,9 @@ const client = require('mongodb').MongoClient;
 const mail = require('nodemailer');
 
 class otpService{
+    constructor(){
+        this.flag = 0;
+    }
 
     storeDetails(uDetails,callback){
         client.
@@ -70,18 +73,30 @@ class otpService{
     }
 
     fetchOtp(pass,callback){
-        //console.log(pass);
-        client.connect('mongodb://localhost:27017',(err,conn)=>{
-            conn.db('test').collection('mail').find({otp : `${pass.otp}`}).toArray((err,data)=>{
-                callback(err,data);
+        console.log(this.flag);
+        if(this.flag==0){
+            console.log('OTP Alive');
+            client.connect('mongodb://localhost:27017',(err,conn)=>{
+                conn.db('test').collection('mail').find({otp : `${pass.otp}`}).toArray((err,data)=>{
+                    callback(err,data);
+                })
             })
-        })
+        }
+       else{
+           console.log('OTP Expired');
+           client.connect('mongodb://localhost:27017',(err,conn)=>{
+                conn.db('test').collection('mail').find({otp : null}).toArray((err,data)=>{
+                    callback(err,data);
+                })
+            })
+       }
     }
 
     removeOtp(info){
         client.connect('mongodb://localhost:27017',(err,conn)=>{
             conn.db('test').collection('mail')
-            .update({email : info.email},{$unset:{otp : info.otp}})
+            .update({email : info.email},{$set:{otp : null}})
+            
         })
     }
 

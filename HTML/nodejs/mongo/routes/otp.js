@@ -3,6 +3,7 @@ const Service = require('../services/otpService').otpService;
 const serv = new Service();
 
 route.post('/',(req,res)=>{//body-> email
+    res.setHeader('content-type','application/json');
     serv.storeDetails(req.body,((err,data)=>{
         if(err)
         {
@@ -20,6 +21,7 @@ route.post('/',(req,res)=>{//body-> email
 })
 
 route.post('/send',((req,res)=>{/*body-> email */
+    res.setHeader('content-type','application/json');
     serv.isValid(req.body,(bool)=>{
         if(bool)
         {
@@ -37,17 +39,20 @@ route.post('/send',((req,res)=>{/*body-> email */
                     })
                     serv.updateOtp(otp, req.body);
                     setTimeout(()=>{
+                        let flag = 0;
                         //console.log('Tadaaa!!!')
                         serv.removeOtp(req.body);
+                        serv.flag=1;
                     },30000);
                 }
             }))
         }
-    })
+    })  
 }))
 
 
 route.post('/validate',(req,res)=>{
+    res.setHeader('content-type','application/json');
     serv.fetchOtp(req.body,(err,data)=>{
         if(err)
         {
@@ -55,7 +60,7 @@ route.post('/validate',(req,res)=>{
                 message : 'Error'
             })
         }
-        else
+        else if(data!=null)
         {
             console.log(req.body.otp);
             console.log(data[0].otp);
@@ -65,16 +70,17 @@ route.post('/validate',(req,res)=>{
                 res.status(200).json({
                     message : 'OTP verified successfully'
                 })
+                //res.redirect('../ConfirmPassword.html')
+                console.log('OTP Verified Successfully');
                 
             }
-            else
+        }
+        else
             {
                 res.status(200).json({
                     message : 'Cannot able to validate! Enter the correct OTP'
                 })
             }
-            
-        }
     })
 
 

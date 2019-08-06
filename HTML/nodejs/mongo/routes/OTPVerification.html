@@ -1,5 +1,14 @@
 <html>
     <head>
         <title>OTP Verification</title>
+        <meta charset="UTF-8">
+        <script type='text/javascript' src='SendOtp.js'></script>
+        <script type='text/javascript' src='VerifyOtp.js'></script>
     </head>
+    <body>
+        <input type='text' id='uemail' name='email'><br />
+        <input type='text' id='uotp' name='otp'><br />
+        <input type='button' id='sendotp' value='Send' onclick="send()"><br />
+        <input type='button' id='verifyotp' value='Verify' onclick="verify()"><br />
+    </body>
 </html>
