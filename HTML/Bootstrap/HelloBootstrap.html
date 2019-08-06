@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        Hello | Bootstrap
+    </title>
+    <meta charset="utf-8">
+    <!--<meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">-->
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
+
+    <script type='text/javascript'>
+        const changeid = () => {
+
+                document.getElementById('txt').value = ' ';
+               
+            }
+            const changename = () => {
+
+                document.getElementById('txt2').value = ' ';
+            }
+    </script>
+</head>
+
+<body>
+    <div class="container">
+        <div class='row'>
+                <div class='col-2'>
+                      
+            
+                    </div>
+            
+            
+                    <div class='col-8'>
+                        <div class='card'>
+                            <div class="card-header bg-primary"><h3 class='card-title'><b>India Driving License (TamilNadu)</b></h3></div>
+                            <div class="card-body">
+                                <div class='row'>
+                                    <div class='col-4'>
+                                        <img src="photo.jpg">
+                                    </div>
+                                    <div class='col'>
+                                        <div class="row" id='text'>
+                                            <div class="input-group input-group-lg">
+                                                <div class="input-group-prepend">
+                                                        <span class="input-group-text" id="inputGroup-sizing-lg">ID</span>
+                                                </div>
+                                                <input type='text' id='txt' class="form-control" aria-label="Large" aria-describedby="inputGroup-sizing-lg"> 
+                                                <div class="input-group-append">
+                                                        <span class="input-group-text" id="inputGroup-sizing-lg"><img src="icon.png" type='button' value='click' onclick='changeid()'></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <br />
+                                        <div class="row" id='text'>
+                                            <div class="input-group input-group-lg">
+                                                <div class="input-group-prepend">
+                                                        <span class="input-group-text" id="inputGroup-sizing-lg">NAME</span>
+                                                </div>
+                                                <input type='text' id='txt2' class="form-control" aria-label="Large" aria-describedby="inputGroup-sizing-lg">
+                                                <div class="input-group-append">
+                                                        <span class="input-group-text" id="inputGroup-sizing-lg"><img src="icon.png" type='button' value='click' onclick='changename()'></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <br />
+                                        <div class='row'>
+                                            <div class='col-7'>
+                                                <div class='row'>
+                                                    <div class="input-group input-group-lg">
+                                                        <div class="input-group-prepend">
+                                                                <span class="input-group-text" id="inputGroup-sizing-lg">D.O.B.</span>
+                                                        </div>
+                                                        <input type='text' id='txt2' class="form-control" aria-label="Large" aria-describedby="inputGroup-sizing-lg">
+                                                       
+                                                    </div>   
+                                                </div>
+                                                
+                                                <div class='row'>
+                                                    <div class="input-group input-group-lg">
+                                                            <div class="input-group-prepend">
+                                                                <span class="input-group-text" id="inputGroup-sizing-lg">GENDER  </span>
+                                                            </div>
+                                                            <input type='text' id='txt2' class="form-control" aria-label="Large" aria-describedby="inputGroup-sizing-lg">
+                                                            
+                                                    </div>  
+                                                </div>
+                                                
+                                                <div class='row'>
+                                                    <div class="input-group input-group-lg">
+                                                            <div class="input-group-prepend">
+                                                                <span class="input-group-text" id="inputGroup-sizing-lg">CLASS</span>
+                                                            </div>
+                                                            <input type='text' id='txt2' class="form-control" aria-label="Large" aria-describedby="inputGroup-sizing-lg">
+                                                            
+                                                    </div>  
+                                                </div>
+                                            </div> 
+                                            <div class='col-5'>
+                                                <div class='row'>
+                                                    <div class="input-group input-group-lg">
+                                                            <div class="input-group-prepend">
+                                                                <span class="input-group-text" id="inputGroup-sizing-lg">ISS</span>
+                                                            </div>
+                                                            <input type='text' id='txt2' class="form-control" aria-label="Large" aria-describedby="inputGroup-sizing-lg">
+                                                            
+                                                    </div>  
+                                                </div>
+                                                <div class='row'>
+                                                    <div class="input-group input-group-lg">
+                                                            <div class="input-group-prepend">
+                                                                <span class="input-group-text" id="inputGroup-sizing-lg">EXP</span>
+                                                            </div>
+                                                            <input type='text' id='txt2' class="form-control" aria-label="Large" aria-describedby="inputGroup-sizing-lg">
+                                                            
+                                                            
+                                                    </div>  
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                            
+                          
+                        </div>
+                        
+            
+                    </div>
+                    <div class='col-2'>
+                        
+                        
+                    </div>
+            
+                </div>
+            
+        </div>
+</body>
+
+</html>

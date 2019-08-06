@@ -1,0 +1,61 @@
+<html>
+    <head>
+        <title>
+            Users Page
+        </title>
+        <meta charset="UTF-8">
+        <script type="text/javascript">
+        const getProd = ()=>{
+            const _url = 'http://localhost:1200/product';
+            fetch(_url,{})
+            .then(res=>res.json())
+            .then(product=>{
+                createTable(product);
+            })
+        }
+        const createTable = (data)=>{
+            let rows = '';
+            data.product.forEach(u => {
+                rows += `<tr>
+                            <td>${u.product_name}</td>
+                            <td>${u.product_price}</td>
+                            <td>${u.product_quantity}</td>
+                            <td><button onclick="add('${u.product_name} ',' ${u.product_price}')">ADD</button>
+                        </tr>`
+            });
+            const _table = `<table>
+                                <tr>
+                                    <th>Product Name</th>
+                                    <th>Price</th>
+                                    <th>Quantity</th>
+                                </tr>
+                                ${rows}
+                            </table>`
+            document.getElementById('users').innerHTML = _table;
+        }
+        const add = (name,price) =>{
+            let quantity = 1;
+            let c_url = 'http://localhost:1200/cart/';
+            fetch(c_url + '/add',{
+                method : 'POST',
+                headers : {
+                    'content-type' : 'application/json'
+                },
+                body : JSON.stringify({
+                    name : name,
+                    price : price,
+                    quantity : quantity
+                })
+            })
+        }
+        </script>
+    </head>
+    <body onload="getProd()">
+    <div>
+        <a href="cart.html"><img src="../cart.png"></img></a>
+    </div>
+    <div id="users">
+
+    </div>
+    </body>
+</html>

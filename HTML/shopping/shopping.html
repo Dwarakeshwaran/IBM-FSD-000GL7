@@ -3,14 +3,44 @@
         <title>Shop</title>
         <meta charset="UTF-8">
         <script rel = "text/javascript" src = "shopping.js"></script>
+        
+        <script type="text/javascript">
+       
+        const cart = () => {
+                const url = 'http://localhost:2305/cart'
+                fetch(url, {
+                method: 'GET'
+            })
+                .then(res => res.json())
+                .then((data) => {
+                   table = `<table>`
+                    data.cart.forEach((item) => {
+                        table += `
+                                <tr>
+                                <td>${item.cname}</td>
+                                <td>${item.cprice}</td>
+                                </tr>`
+                    });
+                    table +=`</table>`
+
+                    document.getElementById('cart').innerHTML = table;
+                })
+            }
+        
+        </script>
     </head>
 
     <body>
         <input type="text" id="iname" placeholder="Enter the Product Name">
         <input type="button" id="ibtn" value="Search" onclick="search_item()">
-
+        <a href="./cart.html"><input type="button" id="ibtn" value="Cart" ></a>
         <div id='display_items'>
 
         </div>
+        <div id="cart">
+
+        </div>
+
+        
     </body>
 </html>

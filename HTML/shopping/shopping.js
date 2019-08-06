@@ -1,7 +1,7 @@
 const search_item= ()=>{
     let iname = document.getElementById('iname').value;
     let table = '';
-    const url = 'http://localhost:1000/items';
+    const url = 'http://localhost:2305/items';
     fetch(url,{
         method : 'GET'
     })
@@ -18,7 +18,7 @@ const search_item= ()=>{
                 </tr>
                 `
         data.items.forEach((item) => {
-           // if(iname == item.name){
+           if(iname == item.name){
                 table += `
                         <tr>
                         <td>${item.id}</td>
@@ -26,7 +26,7 @@ const search_item= ()=>{
                         <td>${item.price}</td>
                         <td><input type='button' value='Add to Cart' onclick = 'addCart(${JSON.stringify(item.name)},${item.price})'></td>
                         </tr>`
-           // }
+           }
             
         });
 
@@ -39,10 +39,10 @@ const search_item= ()=>{
 
 const addCart = (cname, cprice) => {
     const obj = {
-        "name": cname,
-        "price": cprice
+        "cname": cname,
+        "cprice": cprice
     }
-    const url = 'http://localhost:1000/cart';
+    const url = 'http://localhost:2305/cart';
 
     console.log(obj);
     fetch(url + '/add', {
@@ -59,6 +59,7 @@ const addCart = (cname, cprice) => {
     .catch(error=>{
         console.log(error);
     });
+    
 
 
 }

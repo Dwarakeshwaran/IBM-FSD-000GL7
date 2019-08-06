@@ -1,11 +1,14 @@
 const express = require('express');
 const server = express();
 const Service = require('./services/item-service').dataClass;
+const cService = require('./services/item-service').CartService;
+
 const parser = require('body-parser');
 const cors = require('cors');
 
 
-const api = require('./api/api').api;
+const api = require('./api/cart-api').api;
+const api2 = require('./api/buy-api').userRoutes;
 //const urlParser = parser.json({ extended: true });
 
 
@@ -26,9 +29,9 @@ server.get('/items',(req,res)=>{
 })
 
 server.use('/cart',api);
+server.use('/product',api2)
 
 
-
-server.listen(1000,()=>{
-    console.log("Server started at port 1000");
+server.listen(2305,()=>{
+    console.log("Server started at port 2305");
 })

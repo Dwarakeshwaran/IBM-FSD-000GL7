@@ -1,0 +1,58 @@
+<html>
+
+<head>
+    <title>Server</title>
+    <meta charset="UTF-8">
+    <script type="text/javascript">
+  
+        
+        const add = () => {
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+        
+            
+
+            const obj = {
+                'uname' : name,
+                'uemail': email
+            }
+
+            console.log(obj);
+
+            const url = 'http://localhost:2000/details'
+            fetch(url, {
+                method : 'POST',
+                headers : {
+                    'content-type' : 'application/json'
+                },
+                body : JSON.stringify(obj)
+            })
+        }
+
+
+        const send = ()=>{
+            const url = 'http://localhost:2000/send'
+            fetch(url,{
+                method : 'POST',
+                headers: {
+                    'content-type' : 'application/json'
+                }
+            })
+            .then(res => res.json())
+            
+        }
+
+    </script>
+</head>
+
+<body>
+    Name<br />
+    <input type="text" id="name" placeholder="Enter Name"><br />
+    Email<br />
+    <input type="email" id="email" placeholder="Enter Email"><br />
+    <input type="button" id="btn" value="Save" onclick=add()>
+    <input type="button" id="ebtn" value="sendmail" onclick=send()>
+
+</body>
+
+</html>
