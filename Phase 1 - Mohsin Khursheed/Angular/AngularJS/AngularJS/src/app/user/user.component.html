@@ -1,0 +1,22 @@
+<b>USERS</b><br />
+<b>Users : {{uCount}} (Active:{{active}} Inactive:{{inactive}})</b>
+<table>
+    <thead>
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Age</th>
+            </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor = 'let u of users'>
+            <td>{{u.id}}</td>
+            <td>{{u.name}}</td>
+            <td>{{u.age}}</td>
+            <td><input type='button' value='Delete' (click)="delete()"></td>
+        </tr>
+    </tbody>
+    <input type='button' value='Show' (click)="add()">
+
+</table>
+

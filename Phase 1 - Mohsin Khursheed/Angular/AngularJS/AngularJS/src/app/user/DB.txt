@@ -1,0 +1,15 @@
+db.details.insert(
+    {
+        "_id" : 10,
+        "TravelsName" : "Alpha Travels",
+        "DepartureTime" : "20:15",
+        "Duration" : "9h15m",
+        "ArrivalTime" : "05:30",
+        "TotalSeat" : 36,
+        "BusTypeSeat" : "A/C",
+        "BusType" : "Sleeper(2+1)",
+        "DeparturePlace" : "Hopes College",
+        "ArrivalPlace" : "Chennai",
+        "price" : 650
+    }
+)
