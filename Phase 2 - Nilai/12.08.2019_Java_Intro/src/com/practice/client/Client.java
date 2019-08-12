@@ -2,7 +2,7 @@ package com.practice.client;
 import com.practice.ConstructorChaining;
 import com.practice.MyDate;
 import com.practice.Account;
-import com.practice.Product;
+
 public class Client {
 
 	public static void main(String[] args) {
@@ -22,7 +22,7 @@ public class Client {
 		
 		System.out.println(acc1.equals(acc2));
 		
-		Product pro = new Product();
+		//Product pro = new Product();
 		//Product book = new Book();
 		//System.out.println(pro.item);
 

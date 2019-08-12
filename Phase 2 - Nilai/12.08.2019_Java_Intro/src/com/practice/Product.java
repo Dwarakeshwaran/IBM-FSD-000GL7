@@ -30,13 +30,14 @@ public class Product {
 	}
 
 	
+	@SuppressWarnings("static-access")
 	public static void main(String[] args) {
 		Product pro = new Product();
 		pro = new Book();
 		
-		System.out.println(Product.getItem());
+		System.out.println(pro.getItem());
 		pro = new Tv();
-		System.out.println(Product.getItem());
+		System.out.println(pro.getItem());
 		//System.out.println(book.item);
 		
 		
