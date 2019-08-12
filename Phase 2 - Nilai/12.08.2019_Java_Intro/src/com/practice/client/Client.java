@@ -24,7 +24,7 @@ public class Client {
 		
 		Product pro = new Product();
 		//Product book = new Book();
-		System.out.println(pro.item);
+		//System.out.println(pro.item);
 
 	}
 

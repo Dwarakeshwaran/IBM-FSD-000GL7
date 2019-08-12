@@ -8,6 +8,14 @@ public class Product {
 	private int currentRate;
 	
 	private static int item;
+	static {
+		item=0;
+	}
+	
+	public Product() {
+		item++;
+	}
+	
 	
 	public static int getItem() {
 		return item;
@@ -21,9 +29,7 @@ public class Product {
 		this.currentRate = currentRate;
 	}
 
-	static {
-		item=0;
-	}
+	
 	public static void main(String[] args) {
 		Product pro = new Product();
 		pro = new Book();
