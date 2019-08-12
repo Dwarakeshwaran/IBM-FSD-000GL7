@@ -1,6 +1,6 @@
 //Blank final variable
 //final methods cannot be overridden
-//final classes cannot be extended for eg, String Class cannot be extended since it is a Final Class
+//final classes cannot be extended for example, String Class cannot be extended since it is a Final Class
 
 package com.practice;
 

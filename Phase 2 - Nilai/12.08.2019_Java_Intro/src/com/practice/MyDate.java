@@ -3,6 +3,7 @@ package com.practice;
 public class MyDate {
 	private int day;
 	private int month;
+	@SuppressWarnings("unused")
 	private int year;
 	
 	public boolean getDay() {
