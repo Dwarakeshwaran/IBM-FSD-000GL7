@@ -1,4 +1,4 @@
-package com.practice.abstractclass.assignment;
+package com.assignment.abstractclass;
 
 public abstract class Computation {
 	public abstract boolean isGreater(Object obj1, Object obj2);

@@ -1,4 +1,4 @@
-package com.practice.abstractclass.assignment;
+package com.assignment.abstractclass;
 
 public class Tester {
 	public static void main(String[] args) {

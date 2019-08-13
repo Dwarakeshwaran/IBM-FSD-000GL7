@@ -1,4 +1,4 @@
-package com.practice.abstractclass.assignment;
+package com.assignment.abstractclass;
 
 public class Line extends Computation{
 
