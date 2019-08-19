@@ -14,4 +14,16 @@
 	<natures>
 		<nature>org.eclipse.jdt.core.javanature</nature>
 	</natures>
+	<linkedResources>
+		<link>
+			<name>mysql-connector-java-5.1.48-bin.jar</name>
+			<type>1</type>
+			<locationURI>PARENT-4-PROJECT_LOC/Downloads/mysql-connector-java-5.1.48/mysql-connector-java-5.1.48/mysql-connector-java-5.1.48-bin.jar</locationURI>
+		</link>
+		<link>
+			<name>mysql-connector-java-5.1.48.jar</name>
+			<type>1</type>
+			<locationURI>PARENT-4-PROJECT_LOC/Downloads/mysql-connector-java-5.1.48/mysql-connector-java-5.1.48/mysql-connector-java-5.1.48.jar</locationURI>
+		</link>
+	</linkedResources>
 </projectDescription>
