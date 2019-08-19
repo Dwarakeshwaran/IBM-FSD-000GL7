@@ -1,4 +1,4 @@
-package collections.map.practice;
+package map.practice;
 
 import java.util.Map;
 import java.util.TreeMap;
