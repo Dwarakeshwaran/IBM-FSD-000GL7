@@ -12,6 +12,9 @@ import java.util.Scanner;
 public class JdbcDemo {
 
 	public static void main(String[] args) throws SQLException, ClassNotFoundException {
+		
+		System.out.println("JDBC");
+		
 		//Register Driver
 		DriverManager.registerDriver(new org.h2.Driver());
 		Class.forName("org.h2.Driver");
