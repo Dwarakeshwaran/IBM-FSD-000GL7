@@ -13,7 +13,7 @@ public class JdbcDemo {
 
 	public static void main(String[] args) throws SQLException, ClassNotFoundException {
 		
-		System.out.println("JDBC");
+		System.out.println("JDBC Connection");
 		
 		//Register Driver
 		DriverManager.registerDriver(new org.h2.Driver());
