@@ -53,10 +53,12 @@ public class Main {
 		switch(choice) {
 		case 1:
 			Collections.sort(list);
+			System.out.printf("%-15s %-30s %-30s %-10s %-10s %-10s\n","Employee ID","Name","Department","Date Of Joining","Age","Salary");
 			EmployeeBO.printEmployees(list);
 			break;
 		case 2:
 			Collections.sort(list, new AgeComparator());
+			System.out.printf("%-15s %-30s %-30s %-10s %-10s %-10s\n","Employee ID","Name","Department","Date Of Joining","Age","Salary");
 			EmployeeBO.printEmployees(list);
 			break;
 		}
