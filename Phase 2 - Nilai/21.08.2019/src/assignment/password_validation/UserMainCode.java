@@ -8,7 +8,7 @@ public class UserMainCode {
 		boolean upperCase = false;
 		boolean lowerCase = false;
 		boolean number = false;
-		boolean splchar = false;
+		boolean specialCharacter = false;
 		int flag = 0;
 
 		if (password.length() >= 8) {
@@ -21,9 +21,9 @@ public class UserMainCode {
 				else if (Character.isDigit(ch))
 					number = true;
 				else if (specialChars.contains(String.valueOf(ch)))
-					splchar = true;
+					specialCharacter = true;
 			}
-			if (upperCase == true && lowerCase == true && number == true && splchar == true)
+			if (upperCase == true && lowerCase == true && number == true && specialCharacter == true)
 				flag=1;;
 		}
 		else

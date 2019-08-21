@@ -9,7 +9,10 @@ public class Main {
 		
 		String password = sc.nextLine();
 		
-		System.out.println(UserMainCode.checkPassword(password));
+		if(UserMainCode.checkPassword(password))
+			System.out.println("Valid Password");
+		else
+			System.out.println("Invalid Password");
 
 	}
 
