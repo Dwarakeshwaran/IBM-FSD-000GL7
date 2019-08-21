@@ -2,15 +2,18 @@ package assignment.employee;
 
 import java.util.Date;
 
-public class Employee implements Comparable{
+public class Employee implements Comparable<Object>{
 	private int id;
 	private String name;
 	private String department;
-	private String dateOfJoining;
-	private int age;
-	private int salary;
+	private Date dateOfJoining;
+	private String age;
+	private String salary;
 	
-	public Employee(int id, String name, String department, String dateOfJoining, int age, int salary) {
+	public Employee() {
+		super();
+	}
+	public Employee(int id, String name, String department, Date dateOfJoining, String age, String salary) {
 		super();
 		this.id = id;
 		this.name = name;
@@ -37,34 +40,38 @@ public class Employee implements Comparable{
 	public void setDepartment(String department) {
 		this.department = department;
 	}
-	public String getDateOfJoining() {
+	public Date getDateOfJoining() {
 		return dateOfJoining;
 	}
-	public void setDateOfJoining(String dateOfJoining) {
+	public void setDateOfJoining(Date dateOfJoining) {
 		this.dateOfJoining = dateOfJoining;
 	}
-	public int getAge() {
+	public String getAge() {
 		return age;
 	}
-	public void setAge(int age) {
+	public void setAge(String age) {
 		this.age = age;
 	}
-	public int getSalary() {
+	public String getSalary() {
 		return salary;
 	}
-	public void setSalary(int salary) {
+	public void setSalary(String salary) {
 		this.salary = salary;
 	}
-	@Override
-	public int compareTo(Object o) {
-		
-		return 0;
-	}
+	
+	
 	
 	@Override
 	public String toString() {
-		return "Name: "+this.name+"\n"+"Department: "+this.department+"\n"+"Date Of Joining: "+this.dateOfJoining+"\n"+"Age: "+this.age+"Salary: "+"\n"+this.salary;
+		return "Name: "+this.name+"\n"+"Department: "+this.department+"\n"+"Date Of Joining: "+this.dateOfJoining+"\n"+"Age: "+this.age+"\n"+"Salary: "+this.salary+"\n";
 		
+	}
+	@Override
+	public int compareTo(Object obj) {
+		
+		Employee emp = (Employee) obj;
+		
+		return Integer.parseInt(this.getSalary()) - Integer.parseInt(emp.getSalary());
 	}
 	
 

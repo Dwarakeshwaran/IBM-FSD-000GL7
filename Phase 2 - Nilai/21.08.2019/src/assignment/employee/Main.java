@@ -3,6 +3,7 @@ package assignment.employee;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.Date;
 import java.util.Iterator;
 import java.util.List;
@@ -18,10 +19,10 @@ public class Main {
 		int id;
 		String name;
 		String department;
-		//String date;
-		String dateOfJoining;
-		int age;
-		int salary;
+		String date;
+		Date dateOfJoining;
+		String age;
+		String salary;
 		
 		System.out.println("Enter the number of employees: ");
 		noe = sc.nextLine();
@@ -32,11 +33,11 @@ public class Main {
 			id=i;
 			name = sc.nextLine();
 			department = sc.nextLine();
-			//SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
-			dateOfJoining = sc.nextLine();
-			// = sdf.parse(date);
-			age = sc.nextInt();
-			salary = sc.nextInt();
+			SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
+			 date = sc.nextLine();
+			age = sc.nextLine();
+			salary = sc.nextLine();
+			dateOfJoining = sdf.parse(date);
 			
 			list.add(new Employee(id, name, department, dateOfJoining, age, salary));
 			
@@ -51,9 +52,13 @@ public class Main {
 		
 		switch(choice) {
 		case 1:
+			Collections.sort(list);
 			EmployeeBO.printEmployees(list);
-			
-		
+			break;
+		case 2:
+			Collections.sort(list, new AgeComparator());
+			EmployeeBO.printEmployees(list);
+			break;
 		}
 		
 		
