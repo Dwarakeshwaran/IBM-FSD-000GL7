@@ -19,7 +19,7 @@ class Student implements Comparable<Object> {
 
 	// Used to print student details in main()
 	public String toString() {
-		return this.rollno + " " + this.name + " " + this.address + " " + this.date;
+		return this.rollno + "" + this.name + " " + this.address + " " + this.date;
 	}
 
 	@Override
