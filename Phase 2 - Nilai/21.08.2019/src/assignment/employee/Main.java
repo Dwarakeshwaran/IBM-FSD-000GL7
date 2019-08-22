@@ -23,48 +23,46 @@ public class Main {
 		Date dateOfJoining;
 		String age;
 		String salary;
-		
+
 		System.out.println("Enter the number of employees: ");
 		noe = sc.nextLine();
-		
+
 		List<Employee> list = new ArrayList<Employee>();
-		for(int i=1; i<=Integer.parseInt(noe); i++) {
-			System.out.println("Enter the details for employee "+i+": ");
-			id=i;
+		for (int i = 1; i <= Integer.parseInt(noe); i++) {
+			System.out.println("Enter the details for employee " + i + ": ");
+			id = i;
 			name = sc.nextLine();
 			department = sc.nextLine();
 			SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
-			 date = sc.nextLine();
+			date = sc.nextLine();
 			age = sc.nextLine();
 			salary = sc.nextLine();
 			dateOfJoining = sdf.parse(date);
-			
+
 			list.add(new Employee(id, name, department, dateOfJoining, age, salary));
-			
+
 		}
-		
-		//System.out.println(list.get(0));
+
+		// System.out.println(list.get(0));
 		System.out.println("1. Sort Employees by salary");
 		System.out.println("2. Sort employees by age and by date of joining");
-		
+
 		int choice;
 		choice = sc.nextInt();
-		
-		switch(choice) {
+
+		switch (choice) {
 		case 1:
 			Collections.sort(list);
-			System.out.printf("%-15s %-30s %-30s %-10s %-10s %-10s\n","Employee ID","Name","Department","Date Of Joining","Age","Salary");
+			System.out.printf("%-15s %-30s %-30s %-30s %-10s %-10s\n", "Employee ID", "Name", "Department","Date Of Joining", "Age", "Salary");
 			EmployeeBO.printEmployees(list);
 			break;
 		case 2:
 			Collections.sort(list, new AgeComparator());
-			System.out.printf("%-15s %-30s %-30s %-10s %-10s %-10s\n","Employee ID","Name","Department","Date Of Joining","Age","Salary");
+			System.out.printf("%-15s %-30s %-30s %-10s %-10s %-10s\n", "Employee ID", "Name", "Department",
+					"Date Of Joining", "Age", "Salary");
 			EmployeeBO.printEmployees(list);
 			break;
 		}
-		
-		
-		
 
 	}
 

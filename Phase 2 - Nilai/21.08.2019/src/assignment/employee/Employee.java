@@ -63,7 +63,7 @@ public class Employee implements Comparable<Object>{
 	
 	@Override
 	public String toString() {
-		return this.id+""+this.name+""+this.department+""+this.dateOfJoining+""+this.age+""+this.salary+"\n";
+		return this.id+"               "+this.name+"                          "+this.department+"                         "+this.dateOfJoining+"      "+this.age+"         "+this.salary+"\n";
 		
 	}
 	@Override
