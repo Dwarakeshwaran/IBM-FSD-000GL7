@@ -26,11 +26,15 @@ int read(char[] cbuffer, int offset, int length)
 
 #### Type
 
-File			FileReader, FileWriter, FileInputStream
+File			FileReader, FileWriter, FileInputStream, FileInputStream
 Memory: Array	CharArrayReader, harArrayWriter, ByteArray
 Memory: String	StringReader, StringWriter, NA
 Pipe			PipedReader, PipedWriter, Piped
 
+## Notes
+
+BufferedReader and BufferedWriter fastly reads and writes the data
+Don't place the text files inside src folder
 
 
 
