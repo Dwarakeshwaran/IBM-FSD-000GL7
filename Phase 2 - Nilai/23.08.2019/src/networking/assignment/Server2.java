@@ -9,7 +9,7 @@ import java.io.PrintWriter;
 import java.net.ServerSocket;
 import java.net.Socket;
 
-public class Server {
+public class Server2 {
 
 	public static void main(String[] args) {
 		// Create Server Socket
@@ -42,32 +42,37 @@ public class Server {
 				// Create InputStream for the getting values from the Client
 
 				// It scans the values given in the client console
-				InputStream clientIn = client.getInputStream();
+				InputStream clientFIn = client.getInputStream();
 				// It creates the memory or stores the values read from the client console in an
 				// object->read
-				BufferedReader read = new BufferedReader(new InputStreamReader(clientIn));
-				String msgFromClient = read.readLine();
-				System.out.println("Message from Client: " + msgFromClient);
+				BufferedReader read = new BufferedReader(new InputStreamReader(clientFIn));
+				String number = read.readLine();
+				System.out.println("Number: " + number);
 				// Create OutputStream which processes the values got from the client and
 				// displays it
+				
+				OutputStream clientFOut = client.getOutputStream();
+				PrintWriter write = new PrintWriter(clientFOut);
+				Integer fact = 1;
+				for(int i = Integer.parseInt(number) ; i > 0 ; i--) {
+					fact = fact * i;
+				}
+				System.out.println(fact);
+				
+				write.println(fact.toString().trim());
 
-				if (msgFromClient != null || !msgFromClient.equalsIgnoreCase("Bye")) {
-					OutputStream clientOut = client.getOutputStream();
-					PrintWriter write = new PrintWriter(clientOut, true);
+				
 
-					String passMsg = "Hello " + msgFromClient;
-					write.println(passMsg);
+					//String passMsg = "Hello " + msgFromClient;
+					//write.println(passMsg);
 					System.out.println("Msg Sent to Client");
 
 				}
 
 				// Close sockets
-				if (msgFromClient != null && msgFromClient.equalsIgnoreCase("bye")) {
-					server.close();
-					client.close();
-					break;
-				}
-			} catch (IOException e) {
+				
+				
+			 catch (IOException e) {
 				e.printStackTrace();
 			}
 		}
