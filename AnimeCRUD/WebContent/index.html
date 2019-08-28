@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Anime List</title>
+</head>
+<body>
+	<h1>Add Anime Details here</h1>
+
+	<form id="form-1" method="post" action="list_control.do">
+		<label for="input-1">Anime Name:</label> <input id="input-1"
+			name="anime" placeholder="Anime name..." required="true" type="text" />
+		<br />
+		<br /> <label for="input-2">Anime Genre:</label> <input id="input-2"
+			name="genre" placeholder="Genre..." required="true" type="text" /> <br />
+		<br /> <label for="input-3">Anime Year: </label> <input id="input-3"
+			name="year" placeholder="Year..." required="true" type="text" /> <br />
+		<br /> <label for="input-3">Rating: </label> <select id="rating"
+			name="rate">
+			<option value="1">1</option>
+			<option value="2">2</option>
+			<option value="3">3</option>
+			<option value="4">4</option>
+			<option value="5">5</option>
+		</select>
+		<br />
+		<br />
+		<input type="reset" value="Reset" autofocus="autofocus" id="button-1"/>
+		<input type="submit" value="Add" id="button-2"/>
+		<a href="animelist.view">View Anime List</a>
+
+	</form>
+</body>
+</html>
