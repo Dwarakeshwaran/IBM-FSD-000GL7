@@ -1,0 +1,16 @@
+package com.spring.myspringapp.beans;
+
+public class Employee {
+	private int id;
+	private String fname;
+	private String lname;
+	private String email;
+	
+	public Employee(int id, String fname, String lname, String email) {
+		super();
+		this.id = id;
+		this.fname = fname;
+		this.lname = lname;
+		this.email = email;
+	}
+}

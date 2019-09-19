@@ -1,0 +1,5 @@
+package com.spring.bootapp.bootstrap;
+
+public class DevJpaBootstrap {
+
+}

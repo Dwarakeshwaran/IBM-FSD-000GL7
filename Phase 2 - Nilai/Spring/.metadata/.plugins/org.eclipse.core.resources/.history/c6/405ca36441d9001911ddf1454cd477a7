@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>Products</title>
+</head>
+<body>
+<form action="#" th:action="/fetchProducts" th:object="" method="post">
+<input type="text" field="">
+
+</form>
+</body>
+</html>

@@ -1,0 +1,5 @@
+package com.spring.image_service.data;
+
+public class Image {
+
+}

@@ -1,0 +1,5 @@
+package com.spring.product_service.entity;
+
+public class Product {
+
+}

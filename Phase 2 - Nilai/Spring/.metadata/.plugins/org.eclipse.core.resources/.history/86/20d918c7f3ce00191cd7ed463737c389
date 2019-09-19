@@ -1,0 +1,12 @@
+package com.spring.myspringapp;
+
+import com.spring.myspringapp.beans.Address;
+
+public class AddressImpl implements Address {
+
+	public String getAddress() {
+		
+		return null;
+	}
+
+}

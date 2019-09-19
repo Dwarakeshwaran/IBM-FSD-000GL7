@@ -1,0 +1,5 @@
+package com.spring.myspringannotation.beans;
+
+public class Employee {
+
+}

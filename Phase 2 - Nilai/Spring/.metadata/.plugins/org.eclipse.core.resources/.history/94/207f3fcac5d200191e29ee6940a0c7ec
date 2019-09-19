@@ -1,0 +1,41 @@
+package com.spring.customerapp.dao;
+
+import org.hibernate.Session;
+import org.hibernate.SessionFactory;
+
+public class CustomerDaoImpl implements CustomerDao {
+
+	private SessionFactory sessionFactory;
+	private Session session;
+	
+	public CustomerDaoImpl(SessionFactory sessionFactory) {
+		super();
+		this.sessionFactory = sessionFactory;
+		
+	}
+
+
+
+
+
+	public SessionFactory getSessionFactory() {
+		return sessionFactory;
+	}
+
+
+	public void setSessionFactory(SessionFactory sessionFactory) {
+		this.sessionFactory = sessionFactory;
+	}
+
+
+	public void createSession() {
+		session = sessionFactory.openSession();
+	}
+	
+
+	public void createCustomer() {
+		
+
+	}
+
+}

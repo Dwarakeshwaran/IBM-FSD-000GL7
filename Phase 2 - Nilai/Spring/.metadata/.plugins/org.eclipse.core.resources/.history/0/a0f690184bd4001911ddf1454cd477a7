@@ -1,0 +1,5 @@
+package com.spring.bootapp.model;
+
+public class Book {
+
+}

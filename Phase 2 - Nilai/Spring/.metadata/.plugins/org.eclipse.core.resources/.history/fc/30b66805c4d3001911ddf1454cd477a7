@@ -1,0 +1,40 @@
+package com.spring.boot;
+
+import java.util.List;
+
+import javax.annotation.PostConstruct;
+import javax.annotation.PreDestroy;
+import javax.persistence.Query;
+
+import org.hibernate.Session;
+import org.hibernate.SessionFactory;
+import org.springframework.beans.factory.annotation.Autowired;
+
+public class CustomerDAOImpl implements CustomerDAO {
+
+	@Autowired
+	private SessionFactory sessionFactory;
+	private Session session;
+	
+	
+	@PostConstruct
+	public void init() {
+		session = sessionFactory.openSession();
+	}
+	
+	@Override
+	public List<Customer> createCustomer(Customer customer) {
+		
+		Query query = session.createQuery("from Customer",Customer.class);
+		
+		return query.getResultList();
+		
+
+	}
+	
+	@PreDestroy
+	public void destroy() {
+		session.close();
+	}
+
+}

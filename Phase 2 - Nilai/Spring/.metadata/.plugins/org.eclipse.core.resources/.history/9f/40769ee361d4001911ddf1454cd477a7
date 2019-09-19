@@ -1,0 +1,5 @@
+package com.spring.flightassignment.entity;
+
+public class Passenger {
+
+}

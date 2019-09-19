@@ -1,0 +1,5 @@
+package com.spring.product_service.services;
+
+public class ProductServiceImpl implements ProductService {
+
+}

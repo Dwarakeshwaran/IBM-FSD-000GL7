@@ -1,0 +1,8 @@
+package com.spring.product_service.model;
+
+public class ResponseModel {
+	private int id;
+	private String name;
+	private int price;
+
+}

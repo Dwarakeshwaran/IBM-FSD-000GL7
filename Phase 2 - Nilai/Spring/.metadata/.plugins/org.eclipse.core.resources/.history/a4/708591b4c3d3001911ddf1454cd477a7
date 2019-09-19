@@ -1,0 +1,33 @@
+package com.spring.boot;
+
+import javax.annotation.PostConstruct;
+import javax.annotation.PreDestroy;
+
+import org.hibernate.Session;
+import org.hibernate.SessionFactory;
+import org.springframework.beans.factory.annotation.Autowired;
+
+public class CustomerDAOImpl implements CustomerDAO {
+
+	@Autowired
+	private SessionFactory sessionFactory;
+	private Session session;
+	
+	
+	@PostConstruct
+	public void init() {
+		session = sessionFactory.openSession();
+	}
+	
+	@Override
+	public void createCustomer() {
+		
+
+	}
+	
+	@PreDestroy
+	public void destroy() {
+		session.close();
+	}
+
+}

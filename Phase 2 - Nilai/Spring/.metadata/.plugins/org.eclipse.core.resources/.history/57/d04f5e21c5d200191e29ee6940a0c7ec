@@ -1,0 +1,6 @@
+package com.spring.customerapp.dao;
+
+public interface CustomerDao {
+
+	public void saveCustomer();
+}

@@ -1,0 +1,13 @@
+package com.spring.product_service.services;
+
+import com.spring.product_service.shared.ProductDto;
+
+public class ProductServiceImpl implements ProductService {
+
+	@Override
+	public ProductDto createProduct(ProductDto productDetails) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

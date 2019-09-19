@@ -1,0 +1,15 @@
+package com.spring.myspringapp.beans;
+
+public class CricketCoach implements Coach {
+
+	public String getDailyWorkout() {
+		// TODO Auto-generated method stub
+		return "Training with Cricket Coach";
+	}
+
+	public String getAddress() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

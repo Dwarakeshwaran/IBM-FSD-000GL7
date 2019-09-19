@@ -1,0 +1,11 @@
+package com.spring.rest.dao;
+
+import java.util.List;
+
+
+
+public interface CustomerDAO {
+
+	List<Customer> getAllCustomer();
+
+}

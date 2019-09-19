@@ -1,0 +1,31 @@
+package com.spring.feign.controller;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.spring.feign.entity.Product;
+import com.spring.feign.product.ProductClient;
+
+@RestController("/")
+public class FiegnController {
+	
+	@Autowired
+	private ProductClient client;
+	
+	
+	public ResponseEntity<?> createProduct(@RequestBody Product product){
+		
+		return ResponseEntity.ok(client.createProduct(product));
+		
+	}
+	
+	
+	@GetMapping("/fetchProducts")
+	public ResponseEntity<?> fetchProducts(){
+		return ResponseEntity.ok(client.getAllProducts());
+	}
+
+}

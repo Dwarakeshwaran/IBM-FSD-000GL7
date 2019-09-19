@@ -1,0 +1,10 @@
+package com.spring.customerapp.dao;
+
+public class CustomerDaoImpl implements CustomerDao {
+
+	public void saveCustomer() {
+		
+
+	}
+
+}

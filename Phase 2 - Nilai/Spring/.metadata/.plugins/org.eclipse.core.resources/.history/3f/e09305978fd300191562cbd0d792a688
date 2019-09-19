@@ -1,0 +1,16 @@
+package com.spring.rest.service;
+
+import java.util.List;
+
+
+public class CustomerServiceImpl implements CustomerService{
+
+	private CustomerDAO dao;
+
+	@Override
+	public List<Customer> getAllCustomer() {
+		// TODO Auto-generated method stub
+		return dao.getAllCustomer();
+	}
+
+}

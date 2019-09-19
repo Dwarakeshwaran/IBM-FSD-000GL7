@@ -1,0 +1,7 @@
+package com.spring.gallery_service.data;
+
+public class Gallery {
+
+	private Long galleryId;
+	private List<Object> images;
+}

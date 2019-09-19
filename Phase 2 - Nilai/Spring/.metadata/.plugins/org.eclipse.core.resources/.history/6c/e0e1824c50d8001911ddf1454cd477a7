@@ -1,0 +1,9 @@
+server:
+  port: 8025
+spring:
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/Dwarakeshwaran/IBM-FSD-000GL7/
+     

@@ -1,0 +1,14 @@
+package com.spring.customerapp.service;
+
+import com.spring.customerapp.dao.CustomerDaoImpl;
+import com.spring.customerapp.entity.Customer;
+
+public class CustomerServiceImpl implements CustomerServcie {
+
+	private CustomerDaoImpl dao;
+	public void createCustomer(Customer customer) {
+		dao.createCustomer(customer);
+
+	}
+
+}

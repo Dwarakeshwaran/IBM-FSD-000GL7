@@ -1,0 +1,8 @@
+package com.spring.customerapp.entity;
+
+@Entity
+public class Customer {
+	
+	
+
+}

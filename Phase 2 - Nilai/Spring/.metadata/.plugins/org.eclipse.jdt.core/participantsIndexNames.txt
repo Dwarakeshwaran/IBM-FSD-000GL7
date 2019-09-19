@@ -1,0 +1,13 @@
+INDEX VERSION 1.131
+C:\Users\B4ibmjava22\Documents\workspace-sts-3.9.9.RELEASE\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1704743560.index
+\myspringwebapp\src\main\resources
+C:\Users\B4ibmjava22\Documents\workspace-sts-3.9.9.RELEASE\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2188083413.index
+\customerapp\src\main\resources
+C:\Users\B4ibmjava22\Documents\workspace-sts-3.9.9.RELEASE\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1339537228.index
+\customerapp\src\main\resources
+C:\Users\B4ibmjava22\Documents\workspace-sts-3.9.9.RELEASE\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2367589066.index
+\myspringwebapp\src\main\resources
+C:\Users\B4ibmjava22\Documents\workspace-sts-3.9.9.RELEASE\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\116986449.index
+\customerapp\src\main\java
+C:\Users\B4ibmjava22\Documents\workspace-sts-3.9.9.RELEASE\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3221590438.index
+\rest\src\main\resources

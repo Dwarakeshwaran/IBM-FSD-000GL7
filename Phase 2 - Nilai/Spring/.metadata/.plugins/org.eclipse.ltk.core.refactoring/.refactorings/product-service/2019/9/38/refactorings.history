@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename package &apos;com.spring.product_service.servicesw&apos; to &apos;com.spring.product_service.services&apos;&#x0D;&#x0A;- Original project: &apos;product-service&apos;&#x0D;&#x0A;- Original element: &apos;product-service/src/main/java/com.spring.product_service.servicesw&apos;&#x0D;&#x0A;- Renamed element: &apos;product-service/src/main/java/com.spring.product_service.services&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename package &apos;com.spring.product_service.servicesw&apos;" flags="589830" hierarchical="false" id="org.eclipse.jdt.ui.rename.package" input="/src\/main\/java&lt;com.spring.product_service.servicesw" name="com.spring.product_service.services" qualified="false" references="true" stamp="1568702613185" textual="false" version="1.0"/>
+</session>

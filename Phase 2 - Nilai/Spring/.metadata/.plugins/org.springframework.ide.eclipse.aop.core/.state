@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aop-reference-model>
+<aop-project name="myspringwebapp"/>
+<aop-project name="customerapp">
+<aspect-definition advice-class-name="org.springframework.transaction.interceptor.TransactionInterceptor" advice-method-name="invoke" advice-method-parameter-types="org.aopalliance.intercept.MethodInvocation" advice-type="AROUND" aspect-end-line-number="64" aspect-name="org.springframework.transaction.interceptor.TransactionInterceptor#customerapp#src/main/webapp/WEB-INF/spring-mvc-crud-demo-servlet.xml#64" aspect-start-line-number="64" factory-id="org.springframework.ide.eclipse.aop.core.javaAdvisorDefinitionElementFactory" file="/customerapp/src/main/webapp/WEB-INF/spring-mvc-crud-demo-servlet.xml" pointcut-expression="(@within(org.springframework.transaction.annotation.Transactional) || @annotation(org.springframework.transaction.annotation.Transactional)) &amp;&amp; execution(* *..*(..))" proxy-target-class="false">
+<aop-reference advice-type="AROUND" bean="1:BeansModel|2:customerapp|3:src/main/webapp/WEB-INF/spring-mvc-crud-demo-servlet.xml|7:beans:15|8:customerDaoImpl:15" bean-file="/customerapp/src/main/webapp/WEB-INF/spring-mvc-crud-demo-servlet.xml" bean-start-line="15" factory-id="org.springframework.ide.eclipse.aop.core.aopReferenceElementFactory" file="/customerapp/src/main/webapp/WEB-INF/spring-mvc-crud-demo-servlet.xml" source="=customerapp/C:\/Users\/B4ibmjava22\/.m2\/repository\/org\/springframework\/spring-tx\/5.1.9.RELEASE\/spring-tx-5.1.9.RELEASE.jar&lt;org.springframework.transaction.interceptor(TransactionInterceptor.class[TransactionInterceptor~invoke~Lorg.aopalliance.intercept.MethodInvocation;" source-start-line="-1" target="=customerapp/src\/main\/java&lt;com.spring.customerapp.dao{CustomerDaoImpl.java[CustomerDaoImpl~createCustomer~QCustomer;" target-start-line="41"/>
+</aspect-definition>
+</aop-project>
+<aop-project name="myspringannotation"/>
+<aop-project name="myspringapp"/>
+</aop-reference-model>

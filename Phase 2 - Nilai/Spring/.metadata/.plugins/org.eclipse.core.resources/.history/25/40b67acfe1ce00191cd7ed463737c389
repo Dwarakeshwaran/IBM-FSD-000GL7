@@ -1,0 +1,20 @@
+package com.spring.myspringapp;
+
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+import com.spring.myspringapp.beans.Coach;
+import com.spring.myspringapp.beans.CricketCoach;
+
+/**
+ * Hello world!
+ *
+ */
+public class App 
+{
+    public static void main( String[] args )
+    {
+        ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext("ApplicationContext.xml");
+        Coach myCoach = context.getBean("theCoach",CricketCoach.class);
+        System.out.println(myCoach.getDailyWorkout());
+    }
+}

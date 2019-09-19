@@ -1,0 +1,12 @@
+package com.spring.customerapp.service;
+
+import com.spring.customerapp.entity.Customer;
+
+public class CustomerServiceImpl implements CustomerServcie {
+
+	public void createCustomer(Customer customer) {
+		
+
+	}
+
+}

@@ -1,0 +1,52 @@
+package com.spring.user_service.shared;
+
+public class UserDto {
+	private String uId;
+	private String fName;
+	private String lName;
+	private String email;
+	private String password;
+	public UserDto(String fName, String lName, String email, String password,String uId) {
+		super();
+		this.uId = uId;
+		this.fName = fName;
+		this.lName = lName;
+		this.email = email;
+		this.password = password;
+	}
+	public UserDto() {
+		super();
+	}
+	public String getuId() {
+		return uId;
+	}
+	public void setuId(String string) {
+		this.uId = string;
+	}
+	public String getfName() {
+		return fName;
+	}
+	public void setfName(String fName) {
+		this.fName = fName;
+	}
+	public String getlName() {
+		return lName;
+	}
+	public void setlName(String lName) {
+		this.lName = lName;
+	}
+	public String getEmail() {
+		return email;
+	}
+	public void setEmail(String email) {
+		this.email = email;
+	}
+	public String getPassword() {
+		return password;
+	}
+	public void setPassword(String password) {
+		this.password = password;
+	}
+	
+
+}

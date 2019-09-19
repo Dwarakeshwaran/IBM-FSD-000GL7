@@ -1,0 +1,7 @@
+package com.spring.boot;
+
+public interface CustomerDAO {
+	
+	public void createCustomer();
+
+}

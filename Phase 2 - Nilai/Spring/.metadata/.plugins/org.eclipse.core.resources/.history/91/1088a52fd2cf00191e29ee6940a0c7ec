@@ -1,0 +1,5 @@
+package com.spring.myspringwebapp.model;
+
+public class Student {
+
+}

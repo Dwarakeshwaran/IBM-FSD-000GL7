@@ -1,0 +1,24 @@
+package com.spring.employee.service;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import com.spring.employee.entity.Employee;
+import com.spring.employee.repository.EmployeeRepository;
+
+public class EmployeeServiceImpl implements EmployeeService {
+
+	private EmployeeRepository employeeRepo;
+	@Override
+	public List<Employee> getEmployees() {
+		
+		List<Employee> employee = new ArrayList<Employee>();
+		
+		for(Employee e : employeeRepo.findAll()) {
+			employee.add(e);
+		}
+		return null;
+		
+	}
+
+}

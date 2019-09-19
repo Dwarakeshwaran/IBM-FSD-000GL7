@@ -1,0 +1,5 @@
+package com.spring.gallery_service.controller;
+
+public class GalleryController {
+
+}

@@ -1,0 +1,5 @@
+package com.spring.user_service.entity.controller;
+
+public class UserController {
+
+}

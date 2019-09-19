@@ -1,0 +1,7 @@
+server.port=8762
+spring.application.name=zuul.server
+eureka.client.service-url.default-zone=http://localhost:8761/eureka/
+zuul.ignored-services=*
+zuul.routes.image-service.path=/images/**
+zuul.routes.image-service.service-id=user-ws
+zuul.prefix=/api

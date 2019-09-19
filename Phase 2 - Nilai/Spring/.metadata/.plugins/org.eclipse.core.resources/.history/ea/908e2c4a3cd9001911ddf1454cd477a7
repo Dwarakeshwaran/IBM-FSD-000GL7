@@ -1,0 +1,5 @@
+package com.spring.feign.controller;
+
+public class FiegnController {
+
+}

@@ -1,0 +1,30 @@
+package com.spring.myspringwebapp.controller;
+
+import javax.servlet.http.HttpServletRequest;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
+
+@Controller
+public class FormController {
+
+	@RequestMapping(method = RequestMethod.GET, name="/StudentForm" )
+	public String goForm(){
+		return "StudentForm";
+	}
+	
+	@RequestMapping(method = RequestMethod.POST , name="/StudentDetails")
+		public String getDetails() {
+			return "StudentDetails";
+		}
+	@RequestMapping(name="/StudentDetailsUpper")
+	public String getDetailsInUpperCase(HttpServletRequest request, Model theModel ) {
+		String message = "Hi"+request.getParameter("fname").toUpperCase();
+		theModel.addAttribute("M", message);
+		
+		return "StudentDetails";
+	}
+
+}

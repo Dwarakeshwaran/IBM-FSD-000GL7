@@ -1,0 +1,7 @@
+package com.spring.myspringannotation.beans;
+
+public class EmployeeDao {
+	
+	private JdbcTemplate
+
+}

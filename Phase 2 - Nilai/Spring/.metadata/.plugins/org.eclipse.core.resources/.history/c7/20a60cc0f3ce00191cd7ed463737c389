@@ -1,0 +1,12 @@
+package com.spring.myspringapp;
+
+import com.spring.myspringapp.beans.Address;
+
+public class AdressImpl implements Address {
+
+	public String getAddress() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

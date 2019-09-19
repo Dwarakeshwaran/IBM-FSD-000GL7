@@ -1,0 +1,7 @@
+server.port=8762
+spring.application.name=zuul.server
+eureka.client.service-url.default-zone=
+zuul.ignored-services=*
+zuul.router.user-ws.path=/user/**
+zuul.router.user-ws.service-id=user-ws
+zuul.prefix=/api

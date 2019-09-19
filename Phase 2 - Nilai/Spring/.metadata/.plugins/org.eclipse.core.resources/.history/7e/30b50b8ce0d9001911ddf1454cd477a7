@@ -1,0 +1,5 @@
+package com.spring.wordserver.controller;
+
+public class WordController {
+
+}

@@ -1,0 +1,24 @@
+package com.spring.myspringannotation.beans;
+
+import org.springframework.jdbc.core.JdbcTemplate;
+
+public class EmployeeDao {
+	
+	private JdbcTemplate jdbcTemplate;
+	public JdbcTemplate getJdbcTemplate() {
+		return jdbcTemplate;
+	}
+
+	public void setJdbcTemplate(JdbcTemplate jdbcTemplate) {
+		this.jdbcTemplate = jdbcTemplate;
+	}
+	
+	public void createEmployee(Employee employee)
+	{
+		String query="insert into employee(name) values(?)";
+		Object obj[]= {employee.getName()};
+		jdbcTemplate.update(query,obj);
+		System.out.println("done");
+	}
+
+}

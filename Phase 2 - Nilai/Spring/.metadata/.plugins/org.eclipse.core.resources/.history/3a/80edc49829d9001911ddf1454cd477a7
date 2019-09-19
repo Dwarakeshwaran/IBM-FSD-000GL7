@@ -1,0 +1,4 @@
+server.port=8005
+spring.application.name=product-ws
+eureka.client.service-url.defaultZone=http://localhost:8761
+

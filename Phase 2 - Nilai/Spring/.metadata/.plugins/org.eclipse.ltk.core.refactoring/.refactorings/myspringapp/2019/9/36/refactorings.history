@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Move element &apos;AddressImpl.java&apos; to &apos;myspringapp/src/main/java/com.spring.myspringapp.beans&apos;&#x0D;&#x0A;- Original project: &apos;myspringapp&apos;&#x0D;&#x0A;- Destination element: &apos;myspringapp/src/main/java/com.spring.myspringapp.beans&apos;&#x0D;&#x0A;- Original element: &apos;com.spring.myspringapp.AddressImpl.java&apos;&#x0D;&#x0A;- Update references to refactored element" description="Move compilation unit" destination="/src\/main\/java&lt;com.spring.myspringapp.beans" element1="/src\/main\/java&lt;com.spring.myspringapp{AddressImpl.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.move" patterns="*" policy="org.eclipse.jdt.ui.moveResources" qualified="false" references="true" stamp="1567588202495" units="1" version="1.0"/>
+</session>

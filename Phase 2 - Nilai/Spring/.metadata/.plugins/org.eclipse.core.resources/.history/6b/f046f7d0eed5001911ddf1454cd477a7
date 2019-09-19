@@ -1,0 +1,12 @@
+/**
+ * 
+ */
+package com.spring.employee.service;
+
+/**
+ * @author b4ibmjava22
+ *
+ */
+public class EmployeeServiceImpl implements EmployeeService {
+
+}

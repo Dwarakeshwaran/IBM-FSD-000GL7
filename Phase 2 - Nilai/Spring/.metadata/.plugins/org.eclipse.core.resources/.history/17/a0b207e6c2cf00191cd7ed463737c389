@@ -1,0 +1,8 @@
+package com.spring.myspringwebapp;
+
+
+import org.springframework.stereotype.Controller
+
+public class MainController {
+
+}

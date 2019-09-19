@@ -1,0 +1,5 @@
+package com.spring.encryption.codes;
+
+public class PasswordEncoderUtil {
+
+}

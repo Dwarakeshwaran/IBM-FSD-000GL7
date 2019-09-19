@@ -1,0 +1,9 @@
+server:
+  port: 800
+spring:
+  application:
+    name: my-client
+  cloud:
+    config:
+      server:
+        uri: http://localhost:8025

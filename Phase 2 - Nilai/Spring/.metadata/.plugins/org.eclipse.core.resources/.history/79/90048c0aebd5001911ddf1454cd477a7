@@ -1,0 +1,15 @@
+package com.spring.employee.entity;
+
+public class Employee {
+	
+	private int id;
+	private String fName;
+	private String lName;
+	private String email;
+	private int salary;
+	private int commition;
+	private int hourlyPaid;
+	private int contractPeriod;
+	
+
+}

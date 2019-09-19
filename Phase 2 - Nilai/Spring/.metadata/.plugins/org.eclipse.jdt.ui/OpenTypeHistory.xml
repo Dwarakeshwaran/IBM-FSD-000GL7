@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<typeInfoHistroy>
+<typeInfo handle="=myspringapp/src\/main\/java&lt;com.spring.myspringapp.beans{Coach.java[Coach" modifiers="513" timestamp="1567588511658"/>
+<typeInfo handle="=myspringapp/src\/main\/java&lt;com.spring.myspringapp.beans{Address.java[Address" modifiers="513" timestamp="1567588198030"/>
+<typeInfo handle="=customerapp/src\/main\/java&lt;com.spring.customerapp.dao{CustomerDao.java[CustomerDao" modifiers="513" timestamp="1568008399736"/>
+<typeInfo handle="=customerapp/src\/main\/java&lt;com.spring.customerapp.service{CustomerServcie.java[CustomerServcie" modifiers="513" timestamp="1568008611198"/>
+<typeInfo handle="=rest/src\/main\/java&lt;com.spring.rest.service{CustomerService.java[CustomerService" modifiers="513" timestamp="1568094932569"/>
+<typeInfo handle="=rest/src\/main\/java&lt;com.spring.rest.dao{CustomerDAO.java[CustomerDAO" modifiers="513" timestamp="1568094935740"/>
+<typeInfo handle="=rest/C:\/Users\/B4ibmjava22\/.m2\/repository\/org\/springframework\/spring-web\/5.1.9.RELEASE\/spring-web-5.1.9.RELEASE.jar&lt;org.springframework.http.codec(CodecConfigurer$CustomCodecs.class[CustomCodecs" modifiers="1545" timestamp="1567675340417"/>
+</typeInfoHistroy>

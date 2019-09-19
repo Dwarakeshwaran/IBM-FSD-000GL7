@@ -1,0 +1,5 @@
+package com.spring.customerapp.controller;
+
+public class CustomerController {
+
+}
